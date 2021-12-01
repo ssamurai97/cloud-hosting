@@ -8,11 +8,9 @@ jobs:
     docker:
       - image: "cimg/base:stable"
     steps:
-      - node/install:
-          node-version: 14.18.1
+      - node/install:node-version: 14.18.1
       - checkout
       - aws-cli/setup
-      - checkout
       - eb/setup
       - run:
           name: Installing and building Udagram's backend
@@ -23,7 +21,6 @@ jobs:
           name: Deploying Udagram's backend to Elastic Beanstalk
           command: |
             cd udagram-api
-            eb use ENV-prod
             npm run backend:deploy
   udagram_frontend:
     docker:
