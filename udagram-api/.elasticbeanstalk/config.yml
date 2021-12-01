@@ -1,7 +1,6 @@
 branch-defaults:
   default:
-    environment: ENV-prod
-    group_suffix: null
+    environment: Udagram-env
 global:
   application_name: udagram-api
   branch: null
