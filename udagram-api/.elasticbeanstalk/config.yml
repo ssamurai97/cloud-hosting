@@ -4,7 +4,7 @@ branch-defaults:
     group_suffix: null
 global:
   application_name: udagram-api
-  branch: master
+  branch: null
   default_ec2_keyname: null
   default_platform: Node.js 14 running on 64bit Amazon Linux 2
   default_region: us-east-2
@@ -16,3 +16,5 @@ global:
   repository: null
   sc: null
   workspace_type: Application
+  deploy:
+    artifact: www/Archive.zip
