@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh",
-    "clearBucket": "aws s3 rm s3://da6-udagram-dev/ --recursive"
+    "clearBucket": "aws s3 rm s3://da6-udagram-dev2/ --recursive"
   },
   "private": true,
   "dependencies": {
