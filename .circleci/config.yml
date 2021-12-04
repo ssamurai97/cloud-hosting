@@ -26,8 +26,9 @@ jobs:
     docker:
       - image: "cimg/base:stable"
     steps:
-      - node/install
       - checkout
+      - node/install:
+          node-version: 14.18.1
       - aws-cli/setup:
           profile-name: AWS_PROFILE
           aws-access-key-id: AWS_ACCESS_KEY_ID
