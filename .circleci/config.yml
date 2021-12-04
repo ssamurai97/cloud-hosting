@@ -20,7 +20,6 @@ jobs:
       - run:
           name: Deploying Udagram's backend to Elastic Beanstalk
           command: |
-            eb use udagram-api-dev2
             npm run backend:deploy
   udagram_frontend:
     docker:
