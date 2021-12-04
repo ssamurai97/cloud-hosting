@@ -26,8 +26,7 @@ jobs:
     docker:
       - image: "cimg/base:stable"
     steps:
-      - node/install:
-          version: 14.18.1
+      - node/install
       - checkout
       - aws-cli/setup:
           profile-name: AWS_PROFILE
@@ -35,6 +34,7 @@ jobs:
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           aws-region: AWS_DEFAULT_REGION
       - run:
+          version: 14.18.1
           name: Install and building Udagram's frontend
           command: |
             npm run frontend:install
