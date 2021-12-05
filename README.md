@@ -1,8 +1,6 @@
 # Udagram
 
 
-[![<ORG_NAME>](https://circleci.com/vcs/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>)
-
 ### master branch:
 [![CircleCI](https://circleci.com/gh/ssamurai97/cloud-hosting.svg?style=shield)](https://app.circleci.com/pipelines/github/ssamurai97/cloud-hosting?branch=master)
 

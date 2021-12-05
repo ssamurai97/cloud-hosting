@@ -9,7 +9,7 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install:
-          node-version: 14.18.1     
+          node-version: 14.18.1
       - checkout
       - aws-cli/setup
       - eb/setup
@@ -47,9 +47,12 @@ jobs:
 workflows:
   udagram_api_frontend_deployment:
     jobs:
-      - udagram_api
-      - udagram_frontend
-      filters:
-        branches:
-          only:
-            - main
+      - udagram_api:
+          filters:
+            branches:
+               only: main
+      - udagram_frontend:
+          filters:
+            branches:
+              only: main
+
