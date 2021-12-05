@@ -49,3 +49,7 @@ workflows:
     jobs:
       - udagram_api
       - udagram_frontend
+      filters:
+        branches:
+          only:
+            - main
