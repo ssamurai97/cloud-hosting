@@ -50,9 +50,9 @@ workflows:
       - udagram_api:
           filters:
             branches:
-               only: main
+               only: master
       - udagram_frontend:
           filters:
             branches:
-              only: main
+              only: master
 
