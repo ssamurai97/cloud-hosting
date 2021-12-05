@@ -11,3 +11,6 @@ This **full stack application** is hosted on **AWS** and uses **EBS**, **RDS** a
   For images uploaded by the users
 - Elastic Beanstalk:
   For hosting the backend
+
+
+![](architecture.png)
